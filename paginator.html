@@ -19,21 +19,5 @@
   <li class="disabled"><a>&raquo;</a></li>
   <li class="disabled"><a>Last Page</a></li>
   {{end}}
-  <li class="form-inline">
-    <select class="form-control" id="perPageSelect">
-      <option value="10">10 </option>
-      <option value="20">20 </option>
-      <option value="50">50 </option>
-    </select>
-  </li>
 </ul>
 {{end}}
-
-<script>
-  $("#perPageSelect").change(function(){
-    var perPage = $("#perPageSelect").val();
-    var url ="{{per_page_link .request "perPageNum"}}";
-    var url = url.replace("perPageNum", perPage);
-    window.location.href=url;
-  })
-</script>

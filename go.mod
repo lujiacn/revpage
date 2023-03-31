@@ -9,5 +9,5 @@ require (
 	github.com/revel/config v1.1.0 // indirect
 	github.com/revel/revel v1.1.0
 	github.com/xeonx/timeago v1.0.0-rc5 // indirect
-	golang.org/x/net v0.4.0 // indirect
+	golang.org/x/net v0.8.0 // indirect
 )
